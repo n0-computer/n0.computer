@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="flex items-center flex-col mt-40">
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+  <!-- Content -->
+  <div class="text-bold mt-2">
+    {{ section.content | safe }}
+  </div>
+</div>
+{% endblock content %}
