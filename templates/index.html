@@ -1,64 +1,67 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="flex flex-col">
-  <section style="background-image:url('/img/wavvy_3.jpg')" class="min-h-screen lg:min-h-1/3 pt-40 bg-cover">
-    <div class="max-w-7xl mx-auto lg:mt-100">
-      <div class="mx-2 sm:mx-6 sm:w-2/3 lg:w-7/12 lg:mx-10">
-        <h4 class="font-space-mono text-md text-n0-pink-300 mb-5">00</h4>
-        <h1 class="text-5xl font-space-mono leading-tight">
-          Reducing net work for networks
-        </h1>
-        <h3 class="text-lg font-space-mono mt-6 text-zinc-400 leading-normal">We are an open R&amp;D organization focused on efficient distributed systems</h3>
-      </div>
+<section style="background-image:url('/img/wavvy_4.jpg')" class="min-h-screen lg:min-h-1/3 pt-40 bg-cover">
+  <div class="max-w-7xl mx-auto lg:mt-100">
+    <div class="mx-2 sm:mx-6 sm:w-2/3 lg:w-7/12 lg:mx-10">
+      <h4 class="font-space-mono text-md text-n0-pink-300 mb-5">00</h4>
+      <h1 class="text-5xl font-space-mono leading-tight">
+        Reducing net work for networks
+      </h1>
+      <h3 class="text-lg font-space-mono mt-6 text-neutral-400 leading-normal">We are an open R&amp;D organization focused on efficient distributed systems</h3>
     </div>
-  </section>
-  <section class="max-w-7xl mx-auto py-20 px-10 flex flex-col sm:flex-row">
-    <div class="w-auto sm:w-3/12 mb-5">
-      <h4 class="font-space-mono text-lg text-zinc-400">01</h4>
+  </div>
+</section>
+<section class="max-w-7xl mx-auto py-40 px-10 flex flex-col sm:flex-row">
+  <div class="w-auto sm:w-3/12 mb-5">
+    <h4 class="font-space-mono text-lg text-n0-pink-300">01</h4>
+  </div>
+  <div class="w-auto sm:w-6/12 text-lg sm:text-xl leading-normal">
+    <h4 class="mb-5">With five plus years of open source experience each, our founding team understands the importance of collaboration and accessibility when it comes to developing innovative software and conducting research.</h4>
+    <h4 class="mb-5">At number zero, research is just as valuable as our software &dash; which is why we make sure that our research is general and our software is opinionated.</h4>
+    <h4 class="mb-5">This allows for easier collaboration among team members and with other organizations which often lead to co-developing software &dash; a testament to the success of our company model.</h4>
+  </div>
+</section>
+<section style="background-image:url('/img/iroh_1.png')" class="w-full py-40 px-10 bg-white bg-cover bg-center shadow-inner flex flex-col sm:flex-row">
+  <div class="w-auto sm:w-3/12 mb-5">
+    <h4 class="font-space-mono text-lg text-n0-pink-300">02</h4>
+  </div>
+  <div class="w-auto sm:w-6/12 text-lg sm:text-xl leading-normal">
+    <h4 class="mb-5">Iroh</h4>
+  </div>
+</section>
+<section class="bg-neutral-600 w-full max-w-7xl mx-auto py-40 px-10 flex flex-col">
+  <div class="w-full flex flex-col sm:flex-row">
+    <div class="sm:w-2/12 mb-5">
+      <h4 class="font-space-mono text-lg text-n0-pink-300">03</h4>
     </div>
-    <div class="w-auto sm:w-6/12">
-      <p class="mb-5">With five plus years of open source experience each, our founding team understands the importance of collaboration and accessibility when it comes to developing innovative software and conducting research.</p>
-      <p class="mb-5">At number zero, research is just as valuable as our software &dash; which is why we make sure that our research is general and our software is opinionated.</p>
-      <p class="mb-5">This allows for easier collaboration among team members and with other organizations which often lead to co-developing software &dash; a testament to the success of our company model.</p>
+    <div class="sm:w-10/12">
+      <h2 class="text-2xl sm:text-3xl mb-4">Community</h2>
+      <p>We think about our work with others along five planes:</p>
+    </div>  
+  </div>
+  <div class="w-full flex pt-5">
+    <div class="sm:w-2/12"></div>
+    <div class="w-full sm:w-9/12">
+      <img class="hidden md:block w-auto" src="img/community-diagram.svg" alt="n0 community">
+      <img class="block md:hidden w-auto" src="img/community-diagram-mobile.svg" alt="n0 community">
     </div>
-  </section>
-  <section class="max-w-7xl mx-auto py-20 px-10 flex">
-    <div class="w-auto sm:w-2/12 mb-5">
-      <h4 class="font-space-mono text-lg">02</h4>
-    </div>
-    <div class="w-full sm:w-6/12">
-      <h2 class="text-2xl">Our Community</h2>
-      <p>Our community operates on five planes:</p>
-      <div class="w-full m-5">
-        <img class="w-full" src="img/logos/community-diagram.svg" alt="n0 community">
-      </div>
-    </div>
-  </section>
-  <section class="max-w-7xl mx-auto py-20 px-10 flex flex-col sm:flex-row">
-    <div class="w-auto sm:w-2/12">
-      <h4 class="font-space-mono text-lg">03</h4>
-    </div>
-    <div class="w-auto sm:w-6/12">
-      <h2 class="text-2xl">Our business model</h2>
-      <p>Our business model is based on creating substantive value for free and in the open. We build products that harness that value for discrete use cases focused on delivering turnkey benefits. This in turn sustains our research, not the other way around. Our partners and collaborators always have a right to know how we plan to make money. Building a business model that doesn&apos;t strike an extractive relationship with our collaborators requires diligence and utmost transparency.</p>
-    </div>
-  </section>
-  <section class="max-w-7xl mx-auto py-20 px-10 flex flex-col sm:flex-row">
-    <div class="w-auto sm:w-2/12">
-      <h4 class="font-space-mono text-lg">04</h4>
-    </div>
-    <div class="sm:w-3/12 sm:mr-10">
-      <h2 class="text-2xl">Becoming a collaborator</h2>
-      <p>being nominated to our brain trust</p>
-    </div>
-    <div class="sm:w-5/12">
-      <p>The n0 project is looking for collaborators who are interested in distributed systems research. n0 is a platform that curates research groups who are mutually invested in research goals. The single hardest problem when doing research is separating signal from noise. n0 believes that smaller groups with stronger connections have a better signal-to-noise ratio. As a n0 collaborator, you will have direct access to n0 staff. To become a n0 collaborator, you must be nominated by another collaborator and seconded. n0 is also looking for contributors. The best way to get an invite is to become a collaborator on their GitHub.</p>
-    </div>
-  </section>
-  <!-- Content -->
-  <!-- <div class="text-bold mt-2">
-    {{ section.content | safe }}
-  </div> -->
-</div>
+  </div>
+</section>
+<section class="max-w-7xl mx-auto py-40 px-10 flex flex-col sm:flex-row">
+  <div class="w-auto sm:w-2/12">
+    <h4 class="font-space-mono text-lg text-n0-pink-300">04</h4>
+  </div>
+  <div class="sm:w-3/12 sm:mr-10">
+    <h2 class="text-2xl">Becoming a collaborator</h2>
+    <p>being nominated to our brain trust</p>
+  </div>
+  <div class="sm:w-5/12">
+    <p>The n0 project is looking for collaborators who are interested in distributed systems research. n0 is a platform that curates research groups who are mutually invested in research goals. The single hardest problem when doing research is separating signal from noise. n0 believes that smaller groups with stronger connections have a better signal-to-noise ratio. As a n0 collaborator, you will have direct access to n0 staff. To become a n0 collaborator, you must be nominated by another collaborator and seconded. n0 is also looking for contributors. The best way to get an invite is to become a collaborator on their GitHub.</p>
+  </div>
+</section>
+<!-- Content -->
+<!-- <div class="text-bold mt-2">
+  {{ section.content | safe }}
+</div> -->
 {% endblock content %}

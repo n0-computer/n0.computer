@@ -27,7 +27,6 @@
     {% endif %}
 
     <link href="/styles/style.css" rel="stylesheet">
-    <link id="syntax_highlight" href="#" rel="stylesheet">
 
     <title>
       {% block title %}
@@ -35,14 +34,14 @@
       {% endblock title %}
     </title>
 </head>
-<body class="bg-zinc-700 text-white h-screen justify-between font-space">
+<body class="bg-neutral-700 text-white h-screen justify-between font-space">
   {% block navbar %}
   <nav class="fixed w-screen">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-10">
       <div class="relative flex items-center justify-between h-20">
         <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
-          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-zinc-400 hover:text-white hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <button id="toggle-mobile-menu" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-neutral-400 hover:text-white hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <!--  
               Icon when menu is closed.
@@ -70,10 +69,10 @@
           
           <div class="hidden inset-y-0 sm:block sm:pr-0 sm:inset-auto">
             <div class="flex space-x-5">
-              <!-- Current: "bg-zinc-900 text-white", Default: "text-zinc-400 hover:bg-zinc-700 hover:text-white" -->
+              <!-- Current: "bg-neutral-900 text-white", Default: "text-neutral-400 hover:bg-neutral-700 hover:text-white" -->
               <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">About</a>
-              <a href="#" class="text-zinc-400 hover:bg-zinc-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Iroh</a>
-              <a href="#" class="text-zinc-400 hover:bg-zinc-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Careers</a>
+              <a href="#" class="text-neutral-400 hover:bg-neutral-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Iroh</a>
+              <a href="#" class="text-neutral-400 hover:bg-neutral-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Careers</a>
             </div>
           </div>
         </div>
@@ -81,32 +80,37 @@
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
+    <div id="mobile-menu" class="hidden bg-neutral-700 sm:hidden" aria-hidden="true" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
       <div class="px-2 pt-2 pb-3 space-y-1">
-        <!-- Current: "bg-zinc-900 text-white", Default: "text-zinc-400 hover:bg-zinc-700 hover:text-white" -->
-        <a href="#" class="bg-zinc-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">About</a>
-        <a href="#" class="text-zinc-400 hover:bg-zinc-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Iroh</a>
-        <a href="#" class="text-zinc-400 hover:bg-zinc-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Careers</a>
+        <!-- Current: "bg-neutral-900 text-white", Default: "text-neutral-400 hover:bg-neutral-700 hover:text-white" -->
+        <a href="#" class="bg-neutral-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">About</a>
+        <a href="#" class="text-neutral-400 hover:bg-neutral-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Iroh</a>
+        <a href="#" class="text-neutral-400 hover:bg-neutral-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Careers</a>
       </div>
     </div>
   </nav>
   {% endblock navbar %}
 
 
-  <main class="mb-auto">
+  <main class="mb-auto flex flex-col">
     {% block content %}
     {% endblock content %}
   </main>
 
-  <!--- pagination --->
   {% block pagination %}
-  {% endblock %}
+  {% endblock pagination %}
 
-  <!--- footer --->
-  <!-- <footer class=""></footer> -->
+  {% block footer %}
+  <footer class="bg-neutral-900 min-h-100 p-32">
+    <div class="max-w-7xl m-auto">
+
+    </div>
+  </footer>
+  {% endblock footer %}
 
   <!--- scripts --->
-  <script defer src="/js/main.js"></script>
+  <script defer src="/js/site.js"></script>
+  <script defer src="https://cdn.usefathom.com/script.js" data-site="LRKDOQBG"></script>
   {% block extra_js %}
   {% endblock extra_js %}
 </body>
