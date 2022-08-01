@@ -34,14 +34,14 @@
       {% endblock title %}
     </title>
 </head>
-<body class="bg-neutral-700 text-white h-screen justify-between font-space">
+<body class="bg-n0gray-900 text-n0gray-200 h-screen justify-between font-space">
   {% block navbar %}
   <nav class="fixed w-screen">
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-10">
+    <div class="max-w-6xl mx-auto px-3 sm:px-6 lg:px-10">
       <div class="relative flex items-center justify-between h-20">
         <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
-          <button id="toggle-mobile-menu" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-neutral-400 hover:text-white hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <button id="toggle-mobile-menu" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-n0gray-400 hover:text-white hover:bg-n0gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <!--  
               Icon when menu is closed.
@@ -69,10 +69,10 @@
           
           <div class="hidden inset-y-0 sm:block sm:pr-0 sm:inset-auto">
             <div class="flex space-x-5">
-              <!-- Current: "bg-neutral-900 text-white", Default: "text-neutral-400 hover:bg-neutral-700 hover:text-white" -->
-              <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">About</a>
-              <a href="#" class="text-neutral-400 hover:bg-neutral-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Iroh</a>
-              <a href="#" class="text-neutral-400 hover:bg-neutral-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Careers</a>
+              <!-- Current: "bg-n0gray-900 text-white", Default: "text-n0gray-400 hover:bg-n0gray-700 hover:text-white" -->
+              <a href="https://github.com/n0-computer" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white">github</a>
+              <a href="https://twitter.com/n0-computer" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white">twitter</a>
+              <a href="#" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white">careers</a>
             </div>
           </div>
         </div>
@@ -80,19 +80,19 @@
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div id="mobile-menu" class="hidden bg-neutral-700 sm:hidden" aria-hidden="true" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+    <div id="mobile-menu" class="hidden bg-n0gray-700 sm:hidden" aria-hidden="true" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
       <div class="px-2 pt-2 pb-3 space-y-1">
-        <!-- Current: "bg-neutral-900 text-white", Default: "text-neutral-400 hover:bg-neutral-700 hover:text-white" -->
-        <a href="#" class="bg-neutral-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">About</a>
-        <a href="#" class="text-neutral-400 hover:bg-neutral-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Iroh</a>
-        <a href="#" class="text-neutral-400 hover:bg-neutral-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Careers</a>
+        <!-- Current: "bg-n0gray-900 text-white", Default: "text-n0gray-400 hover:bg-n0gray-700 hover:text-white" -->
+        <a href="https://github.com/n0-computer" class="bg-n0gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">github</a>
+        <a href="https://twitter.com/n0computer" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">twitter</a>
+        <a href="https://greenhouse.io" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">careers</a>
       </div>
     </div>
   </nav>
   {% endblock navbar %}
 
 
-  <main class="mb-auto flex flex-col">
+  <main class="mb-auto flex flex-col min-h-screen">
     {% block content %}
     {% endblock content %}
   </main>
@@ -101,9 +101,19 @@
   {% endblock pagination %}
 
   {% block footer %}
-  <footer class="bg-neutral-900 min-h-100 p-32">
-    <div class="max-w-7xl m-auto">
-
+  <footer class="bg-n0gray-1000 pt-20 pb-16">
+    <div class="w-full max-w-6xl mx-auto px-2 sm:px-6 lg:px-10 flex flex-col sm:flex-row">
+      <div class="w-full sm:w-3/12">
+        <div class="flex-shrink-0 flex items-center mr-auto">
+          <a href="/">
+            <img class="block md:hidden h-8 w-auto" src="img/logos/wordmark-small-gray.svg" alt="Number Zero">
+            <img class="hidden md:block h-8 w-auto" src="img/logos/wordmark-full-gray.svg" alt="Number Zero">
+          </a>
+      </div>
+      <div class="w-full sm:w-9/12 text-right">
+        <a href="/contact" target="blank" class="mx-4">contact</a>
+        <a href="/legal" target="blank" class="mx-4">legal</a>
+      </div>
     </div>
   </footer>
   {% endblock footer %}

@@ -1,63 +1,79 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<section style="background-image:url('/img/wavvy_4.jpg')" class="min-h-screen lg:min-h-1/3 pt-40 bg-cover">
-  <div class="max-w-7xl mx-auto lg:mt-100">
-    <div class="mx-2 sm:mx-6 sm:w-2/3 lg:w-7/12 lg:mx-10">
-      <h4 class="font-space-mono text-md text-n0-pink-300 mb-5">00</h4>
+<section style="background-image:url('/img/wavvy_4.jpg')" class="min-h-1/3 lg:min-h-1/3 pt-40 bg-cover">
+  <div class="max-w-6xl mx-auto px-3 sm:px-6 lg:px-10 lg:mt-100">
+    <div class="mx-2 mt-6 min-h-[70vh] sm:mx-6 sm:w-2/3 lg:w-6/12 lg:mx-10">
+      <h4 class="font-space-mono text-md text-n0pink-300 mb-5">00</h4>
       <h1 class="text-5xl font-space-mono leading-tight">
         Reducing net work for networks
       </h1>
-      <h3 class="text-lg font-space-mono mt-6 text-neutral-400 leading-normal">We are an open R&amp;D organization focused on efficient distributed systems</h3>
+      <h3 class="text-lg font-space-mono mt-6 text-n0gray-400 leading-normal">We are an open R&amp;D organization focused on efficient distributed systems</h3>
     </div>
   </div>
 </section>
-<section class="max-w-7xl mx-auto py-40 px-10 flex flex-col sm:flex-row">
+<section class="max-w-6xl mx-auto px-3 sm:px-6 lg:px-10 py-40 flex flex-col sm:flex-row">
   <div class="w-auto sm:w-3/12 mb-5">
-    <h4 class="font-space-mono text-lg text-n0-pink-300">01</h4>
+    <h4 class="font-space-mono text-lg text-n0pink-300">01</h4>
   </div>
-  <div class="w-auto sm:w-6/12 text-lg sm:text-xl leading-normal">
+  <div class="w-auto sm:w-7/12 text-lg leading-normal">
     <h4 class="mb-5">With five plus years of open source experience each, our founding team understands the importance of collaboration and accessibility when it comes to developing innovative software and conducting research.</h4>
     <h4 class="mb-5">At number zero, research is just as valuable as our software &dash; which is why we make sure that our research is general and our software is opinionated.</h4>
     <h4 class="mb-5">This allows for easier collaboration among team members and with other organizations which often lead to co-developing software &dash; a testament to the success of our company model.</h4>
   </div>
 </section>
-<section style="background-image:url('/img/iroh_1.png')" class="w-full py-40 px-10 bg-white bg-cover bg-center shadow-inner flex flex-col sm:flex-row">
-  <div class="w-auto sm:w-3/12 mb-5">
-    <h4 class="font-space-mono text-lg text-n0-pink-300">02</h4>
-  </div>
-  <div class="w-auto sm:w-6/12 text-lg sm:text-xl leading-normal">
-    <h4 class="mb-5">Iroh</h4>
-  </div>
-</section>
-<section class="bg-neutral-600 w-full max-w-7xl mx-auto py-40 px-10 flex flex-col">
-  <div class="w-full flex flex-col sm:flex-row">
-    <div class="sm:w-2/12 mb-5">
-      <h4 class="font-space-mono text-lg text-n0-pink-300">03</h4>
-    </div>
-    <div class="sm:w-10/12">
-      <h2 class="text-2xl sm:text-3xl mb-4">Community</h2>
-      <p>We think about our work with others along five planes:</p>
-    </div>  
-  </div>
-  <div class="w-full flex pt-5">
-    <div class="sm:w-2/12"></div>
-    <div class="w-full sm:w-9/12">
-      <img class="hidden md:block w-auto" src="img/community-diagram.svg" alt="n0 community">
-      <img class="block md:hidden w-auto" src="img/community-diagram-mobile.svg" alt="n0 community">
+<section style="background-image:url('/img/iroh_1.png')" class="w-full text-n0gray-900 py-40 sm:py-80 px-10 bg-white bg-cover bg-center shadow-inner flex flex-col sm:flex-row">
+  <div class="w-full max-w-6xl mx-auto px-3 sm:px-6 lg:px-10">
+    <div class="w-auto sm:w-5/12 lg:w-4/12 leading-normal">
+      <p class="mb-5 text-md sm:text-md text-n0gray-400">introducing</p>
+      <img src="/img/logos/iroh-wordmark-full-purple.svg" class="w-40" />
+      <div class="w-28">
+      </div>
+      <p class="mt-10 text-lg">The most efficient implementation of IPFS on any planet.</p>
+      <a href="https://github.com/n0-computer/iroh" class="inline-block my-10 py-3 px-5 bg-irohPurple-500 text-white">
+        FOLLOW DEV ON GITHUB
+      </a>
     </div>
   </div>
 </section>
-<section class="max-w-7xl mx-auto py-40 px-10 flex flex-col sm:flex-row">
+<!-- <section class="bg-n0gray-600 w-full py-40 px-10 flex flex-col">
+  <div class="w-full max-w-6xl mx-auto">
+    <div class="w-full flex flex-col sm:flex-row">
+      <div class="sm:w-2/12 mb-5">
+        <h4 class="font-space-mono text-lg text-n0pink-300">03</h4>
+      </div>
+      <div class="sm:w-10/12">
+        <h2 class="text-2xl sm:text-3xl mb-4">Community</h2>
+        <p>We think about our work with others along five planes:</p>
+      </div>  
+    </div>
+    <div class="w-full flex pt-5">
+      <div class="sm:w-2/12"></div>
+      <div class="w-full sm:w-9/12">
+        <img class="hidden md:block w-auto" src="img/community-diagram.svg" alt="n0 community">
+        <img class="block md:hidden w-auto" src="img/community-diagram-mobile.svg" alt="n0 community">
+      </div>
+    </div>
+  </div>
+</section> -->
+<section class="w-full max-w-6xl mx-auto px-3 sm:px-6 lg:px-10 py-40 flex flex-col sm:flex-row">
   <div class="w-auto sm:w-2/12">
-    <h4 class="font-space-mono text-lg text-n0-pink-300">04</h4>
+    <h4 class="font-space-mono text-lg text-n0pink-300">04</h4>
   </div>
-  <div class="sm:w-3/12 sm:mr-10">
-    <h2 class="text-2xl">Becoming a collaborator</h2>
-    <p>being nominated to our brain trust</p>
+  <div class="w-auto sm:w-4/12 sm:mr-10">
+    <h2 class="text-2xl">Getting Started</h2>
+    <p>Join us in our first year as a team</p>
   </div>
-  <div class="sm:w-5/12">
-    <p>The n0 project is looking for collaborators who are interested in distributed systems research. n0 is a platform that curates research groups who are mutually invested in research goals. The single hardest problem when doing research is separating signal from noise. n0 believes that smaller groups with stronger connections have a better signal-to-noise ratio. As a n0 collaborator, you will have direct access to n0 staff. To become a n0 collaborator, you must be nominated by another collaborator and seconded. n0 is also looking for contributors. The best way to get an invite is to become a collaborator on their GitHub.</p>
+  <ul class="w-auto sm:w-4/12 mt-10 sm:mt-0">
+    <li><a href="https://github.com/n0-computer/iroh" class="block w-full mb-5 py-3 px-5 bg-n0pink-600 text-n0gray-900 transition-colors hover:bg-n0pink-500">
+      follow n0 on twitter
+    </a></li>
+    <li><a href="https://github.com/n0-computer" class="block w-full my-5 py-3 px-5 bg-n0pink-600 text-n0gray-900 transition-colors hover:bg-n0pink-500">
+      follow on github
+    </a></li>
+    <li><a href="https://github.com/n0-computer" class="block w-full my-5 py-3 px-5 bg-n0pink-600 text-n0gray-900 transition-colors hover:bg-n0pink-500">
+      carreers
+    </a></li>
   </div>
 </section>
 <!-- Content -->
