@@ -53,4 +53,4 @@ template = "page.html"
 [extra]
 +++
 
-This is the contact page
+Get in touch by emailing hello [at] (n0.computer)
