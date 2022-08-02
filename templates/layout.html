@@ -36,8 +36,8 @@
 </head>
 <body class="bg-n0gray-900 text-n0gray-200 h-screen justify-between font-space">
   {% block navbar %}
-  <nav class="fixed w-screen">
-    <div class="max-w-6xl mx-auto px-3 sm:px-6 lg:px-10">
+  <nav id="navbar" class="fixed w-full transition-colors ease-in duration-1000">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
       <div class="relative flex items-center justify-between h-20">
         <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
@@ -62,10 +62,10 @@
           </button>
         </div>
         <div class="flex-1 flex sm:items-stretch sm:justify-start">
-          <div class="flex-shrink-0 flex items-center mr-auto">
+          <a href="/" class="block flex-shrink-0 flex items-center mr-auto">
             <img class="block md:hidden h-8 w-auto" src="img/logos/wordmark-small-salmon.svg" alt="Number Zero">
             <img class="hidden md:block h-8 w-auto" src="img/logos/wordmark-full-salmon.svg" alt="Number Zero">
-          </div>
+          </a>
           
           <div class="hidden inset-y-0 sm:block sm:pr-0 sm:inset-auto">
             <div class="flex space-x-5">
@@ -80,10 +80,10 @@
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div id="mobile-menu" class="hidden bg-n0gray-700 sm:hidden" aria-hidden="true" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+    <div id="mobile-menu" class="hidden bg-n0gray-900 sm:hidden transition-colors ease-in duration-1000" aria-hidden="true" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
       <div class="px-2 pt-2 pb-3 space-y-1">
         <!-- Current: "bg-n0gray-900 text-white", Default: "text-n0gray-400 hover:bg-n0gray-700 hover:text-white" -->
-        <a href="https://github.com/n0-computer" class="bg-n0gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">github</a>
+        <a href="https://github.com/n0-computer" class="hover:text-white block px-3 py-2 rounded-md text-base font-medium">github</a>
         <a href="https://twitter.com/n0computer" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">twitter</a>
         <a href="https://greenhouse.io" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">careers</a>
       </div>
@@ -102,13 +102,12 @@
 
   {% block footer %}
   <footer class="bg-n0gray-1000 pt-20 pb-16">
-    <div class="w-full max-w-6xl mx-auto px-2 sm:px-6 lg:px-10 flex flex-col sm:flex-row">
+    <div class="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col sm:flex-row">
       <div class="w-full sm:w-3/12">
-        <div class="flex-shrink-0 flex items-center mr-auto">
-          <a href="/">
-            <img class="block md:hidden h-8 w-auto" src="img/logos/wordmark-small-gray.svg" alt="Number Zero">
-            <img class="hidden md:block h-8 w-auto" src="img/logos/wordmark-full-gray.svg" alt="Number Zero">
-          </a>
+        <a href="/">
+          <img class="block md:hidden h-8 w-auto" src="img/logos/wordmark-small-gray.svg" alt="Number Zero">
+          <img class="hidden md:block h-8 w-auto" src="img/logos/wordmark-full-gray.svg" alt="Number Zero">
+        </a>
       </div>
       <div class="w-full sm:w-9/12 text-right">
         <a href="/contact" target="blank" class="mx-4">contact</a>

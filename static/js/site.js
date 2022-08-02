@@ -15,14 +15,31 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function toggleMobileMenu() {
-  let menu = document.getElementById('mobile-menu');
+  const nb = document.getElementById('navbar')
+  const menu = document.getElementById('mobile-menu');
   if (menu.getAttribute('aria-hidden') === 'true') {
     menu.setAttribute('aria-hidden', 'false')
     menu.classList.remove('hidden')
     menu.classList.add('block')
+    nb.classList.add('bg-n0gray-900')
   } else {
     menu.setAttribute('aria-hidden', 'true')
     menu.classList.remove('block')
     menu.classList.add('hidden')
+    if (window.scrollY <= 100) {
+      nb.classList.remove('bg-n0gray-900')
+    }
   }
 }
+
+window.addEventListener("scroll", () => {
+  // check position and update nav
+  const nb = document.getElementById('navbar')
+  if (!nb?.classList.contains('bg-n0gray-900') && window.scrollY >= 100) {
+    nb.classList.remove('bg-transparent');
+    nb.classList.add('bg-n0gray-900');
+  } else if (nb?.classList.contains('bg-n0gray-900') && window.scrollY <= 100) {
+    nb.classList.add('bg-transparent');
+    nb.classList.remove('bg-n0gray-900')
+  }
+});
