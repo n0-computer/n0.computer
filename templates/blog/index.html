@@ -1,0 +1,17 @@
+{% extends "blog/layout.html" %}
+
+{% block content %}
+<div class="content flex pt-12 md:w-3/4 lg:w-7/12 max-w-1/2 flex-col">
+  <div class="w-full max-w-6xl mx-auto px-3 sm:px-6 lg:px-10">
+    {% for page in section.pages %}
+      <article class="post">
+        <a href="{{ page.permalink }}" class="text-lg">{{ page.title }}</a>
+        <p class="text-sm text-gray-400">{{ page.date | date(format="%A %-d %B")}}</p>
+        <div class="">
+            {{ page.summary | safe }}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
