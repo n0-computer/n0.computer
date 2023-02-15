@@ -3,3 +3,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.blog #page-content h1 { font-size: 28px; }
+.blog #page-content h2 { font-size: 24px; }
+.blog #page-content h3 { font-size: 22px; }
+.blog #page-content h4 { font-size: 20px; }
+
+.blog #page-content h1,
+.blog #page-content h2, 
+.blog #page-content h3, 
+.blog #page-content h4, 
+.blog #page-content h5, 
+.blog #page-content h6 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.blog #page-content p {
+  margin-bottom: 16px;
+  line-height: 1.5em;
+  /* color: #cfd7e6; */
+}
+
+.blog #page-content ul { list-style: disc; }
+.blog #page-content ol { list-style: bullets; }
+
+.blog #page-content ol,
+.blog #page-content ul {
+  padding-left: 20px;
+  line-height: 1.45em;
+  margin-bottom: 14px;
+  margin-top: 14px;
+  /* color: #b9c0cd; */
+}
+
+.blog #page-content ol li,
+.blog #page-content ul li {
+  margin-bottom: 5px;
+}
+
+.blog #page-content blockquote {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.blog #page-content a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #b9c0cd;
+}
