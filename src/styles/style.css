@@ -49,3 +49,9 @@
   margin-bottom: 20px;
   font-style: italic;
 }
+
+.blog #page-content a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #b9c0cd;
+}
