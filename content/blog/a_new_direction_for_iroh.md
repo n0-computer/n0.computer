@@ -1,20 +1,20 @@
 +++
 title = "A New Direction for Iroh"
-date = 2023-02-15
+date = 2023-02-17
 description = """
-Thus far, Iroh has been built as an implementation of the InterPlanetary File System (IPFS) focused on interoperability with Kubo, the reference implementation of IPFS. In the near future Iroh will break compatibility with the IPFS specification, and interoperability with Kubo.
+Thus far, Iroh has been built as an implementation of the InterPlanetary File System (IPFS) focused on interoperability with Kubo, the reference implementation of IPFS. In the near future Iroh will break  interoperability with Kubo, with the goal of moving the IPFS project forward. 
 """
 [extra]
 author="n0 team"
 +++
 
-[Iroh](https://iroh.computer) will still be an IPFS implementation in a loose sense of the term, but moving forward our exclusive focus is on hitting numbers that make Iroh a reliable piece of technology that just works.
+[Iroh](https://iroh.computer) will still be aim to implement the core goals of the IPFS design, but moving forward our exclusive focus is on hitting numbers that make Iroh a reliable piece of technology that just works.
 
 The measurements we’ve gathered from our work to date leaves us confident that we need to make breaking changes to get to that “it just works” feeling, which means a new direction for Iroh. Rather than delete the IPFS implementation we’ve built so far we will rename the project to *Beetle*, and put it into maintenance mode.
 
 In the coming weeks we will publish source code, design documents, measurements and production deployment reports that lead up to a re-release of Iroh. You can stay up to date by subscribing to our [youtube channel](https://www.youtube.com/channel/UCdWMU1dBMmB4SrMokGI4jvA).
 
-We have no plans to leave the IPFS community, instead we want to use our freedom from spec requirements to take big risks in the name of pushing IPFS forward. We see what we’re building as IPFS 2.0, and plan to convince others that Iroh should be formalized as an IPFS successor through a quantified design and real world adoption. We may fail, and if so our work will be published in the open as lessons for our colleagues to build upon.
+We have no plans to leave the IPFS community, instead we want to use our freedom from spec today's requirements to take big risks in the name of pushing IPFS forward. We see what we’re building as IPFS 2.0, and plan to convince others that Iroh should be formalized as future IPFS improvements through a quantified design and real world adoption. We may fail, and if so our work will be published in the open as lessons for our colleagues to build upon.
 
 ### Why?
 
@@ -40,3 +40,11 @@ So, Plan B:
 We’ve been working with this “Plan B” approach since early January, and our early experiments in this new paradigm are extremely promising. We’ve also been spending a great deal of time learning from other research in the space, some of which we are deeply excited to utilize given this newfound freedom.
 
 The world needs IPFS. The only way to get there is to learn & grow. If you’ve ever thought “IPFS doesn’t work”, but wished it did, [we would like to hear from you](https://github.com/n0-computer/iroh/discussions).
+
+<aside>
+<br />
+<br />
+<hr />
+<br />
+<b>Update (2022-02-23):</b> This post originally read that we were "breaking from the IPFS spec", which isn't accurate. IPFS is a bunch of specs, and we're not breaking from all of them. Iroh is still an IPFS implementation: it continues to use CIDs. We've updated this post to reflect the change. Original text of this article can be found <a href="https://github.com/n0-computer/n0.computer/blob/cfbc5d2debc08baa70b639946a9523cdb3910fa4/content/blog/a_new_direction_for_iroh.md">here</a>.
+</aside>

@@ -786,6 +786,10 @@ img, video {
   text-decoration: underline dotted #b9c0cd;
 }
 
+.blog #page-content aside {
+  font-style: italic;
+}
+
 .hover\:bg-n0pink-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 172 156 / var(--tw-bg-opacity));
@@ -950,16 +954,6 @@ img, video {
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:w-5\/12 {
-    width: 41.6667%;
-  }
-
-  .xl\:w-1\/2 {
-    width: 50%;
   }
 }
 
