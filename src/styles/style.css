@@ -55,3 +55,7 @@
   text-decoration-style: dotted;
   text-decoration-color: #b9c0cd;
 }
+
+.blog #page-content aside {
+  font-style: italic;
+}
