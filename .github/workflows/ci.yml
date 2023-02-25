@@ -30,7 +30,7 @@ jobs:
         yarn install
         yarn build
     
-    - name: push to s3
+    - name: push to s3, clear cloudfront
       if: github.ref_name=='main'
       run: |
         export AWS_ACCESS_KEY_ID=${{secrets.S3_ACCESS_KEY_ID}}
@@ -42,3 +42,4 @@ jobs:
         sudo ./aws/install --update
 
         aws s3 cp public s3://n0.computer/ --recursive
+        aws cloudfront create-invalidation --distribution-id ${{secrets.CLOUDFRONT_DISTRIBUTION_ID}} --paths /*

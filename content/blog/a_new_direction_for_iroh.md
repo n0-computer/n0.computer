@@ -14,7 +14,7 @@ The measurements we’ve gathered from our work to date leaves us confident that
 
 In the coming weeks we will publish source code, design documents, measurements and production deployment reports that lead up to a re-release of Iroh. You can stay up to date by subscribing to our [youtube channel](https://www.youtube.com/channel/UCdWMU1dBMmB4SrMokGI4jvA).
 
-We have no plans to leave the IPFS community, instead we want to use our freedom from spec today's requirements to take big risks in the name of pushing IPFS forward. We see what we’re building as IPFS 2.0, and plan to convince others that Iroh should be formalized as future IPFS improvements through a quantified design and real world adoption. We may fail, and if so our work will be published in the open as lessons for our colleagues to build upon.
+We have no plans to leave the IPFS community, instead we want to use our freedom from today's spec requirements to take big risks in the name of pushing IPFS forward. We see what we’re building as IPFS 2.0, and plan to convince others that Iroh should be formalized as future IPFS improvements through a quantified design and real world adoption. We may fail, and if so our work will be published in the open as lessons for our colleagues to build upon.
 
 ### Why?
 
