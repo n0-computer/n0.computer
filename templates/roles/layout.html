@@ -1,0 +1,86 @@
+<!doctype html>
+  <html lang="{{lang}}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@n0computer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="n0.computer"/>
+    <meta name="twitter:title" content="{{ config.title }}" />
+    <meta property="og:title" content="{{ config.title }}" />
+    <meta name="twitter:description" content="Reducing net work for networks" />
+    <meta property="og:description" content="Reducing net work for networks" />
+    <meta name="twitter:image" content="{{ get_url(path='img/logos/wordmark-small-salmon.svg') }}" />
+    <meta property="og:image" content="{{ get_url(path='img/logos/wordmark-small-salmon.svg') }}" />
+    <meta name="twitter:image-alt" content="n0" />
+    <meta property="og:url" content="{{ get_url(path='') }}" />
+
+    {% if config.extra.favicon.webmanifest %}
+    <link href="{{ config.extra.favicon.manifest }}"" rel="manifest" />
+    {% endif %}
+    {% if config.extra.favicon.favicon_16x16 %}
+    <link href='{{ config.extra.favicon.favicon_16x16 }}' rel="icon" sizes="16x16" type="image/png" />
+    {% endif %}
+    {% if config.extra.favicon.favicon_32x32 %}
+    <link href='{{ config.extra.favicon.favicon_32x32 }}' rel="icon" sizes="32x32" type="image/png" />
+    {% endif %}
+    {% if config.extra.favicon.android_chrome_512 %}
+    <link href='{{ config.extra.favicon.android_chrome_512 }}' rel="android-chrome" sizes="512x512" />
+    {% endif %}
+    {% if config.extra.favicon.android_chrome_192 %}
+    <link href='{{ config.extra.favicon.android_chrome_192 }}' rel="android-chrome" sizes="192x192" />
+    {% endif %}
+    {% if config.extra.favicon.apple_touch_icon %}
+    <link href='{{ config.extra.favicon.apple_touch_icon }}' rel="apple-touch-icon" sizes="180x180" />
+    {% endif %}
+    {% if config.extra.favicon.apple_touch_icon %}
+    <link href='{{ config.extra.favicon.apple_touch_icon }}' rel="apple-touch-icon" sizes="180x180" />
+    {% endif %}
+
+    <link href="/styles/style.css" rel="stylesheet">
+
+    <title>
+      {% block title %}
+      {{ config.title }}
+      {% endblock title %}
+    </title>
+</head>
+<body class="blog bg-n0gray-800 text-n0gray-50 h-screen justify-between font-space">
+{% block navbar %}
+<nav id="navbar" class="w-full transition-colors ease-in duration-1000">
+  <div class="px-4 sm:px-6 lg:px-20">
+    <div class="relative flex items-center justify-between h-20">
+      
+      <div class="flex-1 flex sm:items-stretch sm:justify-start">
+        <a href="/" class="block flex items-center mr-4 cursor-pointer">
+          <img class="block md:hidden h-8 w-auto" src="/img/logos/wordmark-small-salmon.svg" alt="Number Zero">
+          <img class="hidden md:block h-8 w-auto" src="/img/logos/wordmark-full-salmon.svg" alt="Number Zero">
+        </a>
+        <a href="/roles" class="text-2xl text-gray-500 leading-normal cursor-pointer">roles</a>
+      </div>
+    </div>
+  </div>
+</nav>
+{% endblock navbar %}
+
+
+  <main class="mb-auto flex flex-col min-h-screen pb-32">
+    {% block content %}
+    {% endblock content %}
+  </main>
+
+  {% block pagination %}
+  {% endblock pagination %}
+
+  {% block footer %}
+  {% endblock footer %}
+
+  <!--- scripts --->
+  <script defer src="/js/site.js"></script>
+  <script defer data-domain="n0.computer" src="https://plausible.io/js/plausible.js"></script>
+  {% block extra_js %}
+  {% endblock extra_js %}
+</body>
+</html>
