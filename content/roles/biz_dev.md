@@ -49,16 +49,20 @@ in_search_index = true
 [extra]
 author = "b5"
 location = "remote"
-contract_term = "indefinite"
+contract_term = "full time or part time, ongoing engagement"
 +++
 
 ## Company Overview:
 number 0 is the deep tech company behind [iroh](https://iroh.computer). We are dedicated to delivering cogent, reliable products and services that put superpowers in the hands of end users. Our mission is to speed up companies shipping on the new stack, so they can stay competitive.
 
+The number 0 team are some of the best p2p engineers on the planet, and have spent the last 3 years building iroh into a project that can make good on the claim of improving the status quo for teams trying to ship apps that give user more agency. Our users are impressed. Our partners are shipping faster. It's time to grow.
+
 ## Job Description:
 We are seeking a highly motivated and experienced Business Development Contractor to join our team. This role is ideal for a strategic thinker who excels at creating opportunities and building relationships in the tech industry. As a key member of our team, you will be instrumental in driving our growth and expanding our reach in the market.
 
 This role will work directly with [b5](https://twitter.com/b_fiive). You will have the full support of a technical founder who will work with you to match iroh's technical capabilities with partner needs.
+
+This is a build role. We're transitioning both the team & the project towards adoption, and need your help to get CRM and pipeline infrastructure in place. We've started on this work, but we want to work with you because you know how do this better than we do.
 
 #### Responsibilities:
 
