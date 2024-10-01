@@ -53,4 +53,20 @@ template = "page.html"
 [extra]
 +++
 
-This is the legal page
+## Site Policies
+
+### Data and Privacy
+We do not collect any cookies or personal data on this website.
+
+### Licensing
+Except as noted, the contents of this site is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/). 
+
+### Licensing Exeptions
+Any code samples on this site are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+
+Trademarks and logos are not included under this license.
+
+In some cases, a page may include content consisting of images, audio or video material, or a link to content on a different webpage (such as videos or slide decks). This content is not covered by the license, unless specifically noted.
+
+### Attributions
+This policy page was adapted from the [Google for Developers](https://developers.google.com/terms/site-policies) policy page.
