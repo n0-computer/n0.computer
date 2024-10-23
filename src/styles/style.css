@@ -1,61 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-.blog #page-content h1 { font-size: 28px; }
-.blog #page-content h2 { font-size: 24px; }
-.blog #page-content h3 { font-size: 22px; }
-.blog #page-content h4 { font-size: 20px; }
-
-.blog #page-content h1,
-.blog #page-content h2, 
-.blog #page-content h3, 
-.blog #page-content h4, 
-.blog #page-content h5, 
-.blog #page-content h6 {
-  margin-top: 12px;
-  margin-bottom: 12px;
+#page-content h1 {
+    font-size: 28px;
+}
+#page-content h2 {
+    font-size: 24px;
+}
+#page-content h3 {
+    font-size: 22px;
+}
+#page-content h4 {
+    font-size: 20px;
 }
 
-.blog #page-content p {
-  margin-bottom: 16px;
-  line-height: 1.5em;
-  /* color: #cfd7e6; */
+#page-content h1,
+#page-content h2,
+#page-content h3,
+#page-content h4,
+#page-content h5,
+#page-content h6 {
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
-.blog #page-content ul { list-style: disc; }
-.blog #page-content ol { list-style: bullets; }
-
-.blog #page-content ol,
-.blog #page-content ul {
-  padding-left: 20px;
-  line-height: 1.45em;
-  margin-bottom: 14px;
-  margin-top: 14px;
-  /* color: #b9c0cd; */
+#page-content p {
+    margin-bottom: 16px;
+    line-height: 1.5em;
+    /* color: #cfd7e6; */
 }
 
-.blog #page-content ol li,
-.blog #page-content ul li {
-  margin-bottom: 5px;
+#page-content ul {
+    list-style: disc;
+}
+#page-content ol {
+    list-style: bullets;
 }
 
-.blog #page-content blockquote {
-  padding-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-style: italic;
+#page-content ol,
+#page-content ul {
+    padding-left: 20px;
+    line-height: 1.45em;
+    margin-bottom: 14px;
+    margin-top: 14px;
+    /* color: #b9c0cd; */
 }
 
-.blog #page-content a {
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #b9c0cd;
+#page-content ol li,
+#page-content ul li {
+    margin-bottom: 5px;
 }
 
-.blog #page-content aside {
-  font-style: italic;
+#page-content blockquote {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+#page-content a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #b9c0cd;
+}
+
+#page-content aside {
+    font-style: italic;
 }
