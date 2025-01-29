@@ -1,16 +1,6 @@
 +++
-title = "Work with number 0"
-description = "Open positions"
-
-# Template to use to render this section page.
-template = "roles/index.html"
-
-# The given template is applied to ALL pages below the section, recursively.
-# If you have several nested sections, each with a page_template set, the page
-# will always use the closest to itself.
-# However, a page's own `template` variable will always have priority.
-# Not set by default.
-page_template = "roles/page.html"
+title = "Logos"
+description = "iroh & number 0 brand content"
 
 # The date of the post.
 # Two formats are allowed: YYYY-MM-DD (2012-10-02) and RFC3339 (2002-10-02T15:00:00Z).
@@ -51,13 +41,18 @@ aliases = []
 # hasn't set `in_search_index` to "false" in its front matter.
 in_search_index = true
 
+# Template to use to render this page.
+template = "page.html"
 +++
 
-## Open Roles at number 0
+Download Logo files for number 0 and iroh here (right-click and use "save link as"):
 
-### We have no open roles at this time.
-
-Rather than leave "ghost roles" open that we don't intend to fill, we're opting to keep this page empty. If you're a truly standout human & think you'd be an incredible fit for out team, please reach out via email to "hello" at this website, or thorugh the iroh discord. Nearly all of our team has come to us thorugh "the passion door", instead of having an explicit role they applied for.
-
-Thanks,
-The number 0 team
+* [iroh_and_number_0_logos.ai](/logos/iroh_and_number_0_logos.ai)
+* [number-0-wordmark-full-gray.svg](/logos/number-0-wordmark-full-gray.svg)
+* [n0-wordmark-small-gray.svg](/logos/n0-wordmark-small-gray.svg)
+* [iroh-wordmark-full-purple.svg](/logos/iroh-wordmark-full-purple.svg)
+* [number-0-wordmark-full-salmon.svg](/logos/number-0-wordmark-full-salmon.svg)
+* [n0-wordmark-small-salmon.svg](/logos/n0-wordmark-small-salmon.svg)
+* [number-0-wordmark-full-dark.svg](/logos/number-0-wordmark-full-dark.svg)
+* [n0-wordmark-small-dark.svg](/logos/n0-wordmark-small-dark.svg)
+* [iroh_logo.png](/logos/iroh_logo.png)
