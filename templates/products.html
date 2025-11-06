@@ -1,0 +1,44 @@
+
+{% extends "layout.html" %} {% block content %}
+
+<section style="background-image:url('/img/wavvy_4.jpg')" class="pt-40 bg-cover">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 lg:mt-10">
+    <div class="mt-6 min-h-[20vh] sm:w-2/3 lg:w-6/12">
+      <h4 class="font-space-mono text-md text-n0pink-300 mb-5">02</h4>
+      <h1 class="text-5xl font-space-mono leading-tight">
+        Products
+      </h1>
+  </div>
+</section>
+<section style="background-image:url('/img/iroh_1.png')" class="w-full text-n0gray-900 py-40 sm:py-80 px-10 bg-white bg-cover bg-center shadow-inner flex flex-col sm:flex-row">
+  <div class="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
+    <div class="w-auto sm:w-5/12 lg:w-4/12 leading-normal">
+      <p class="mb-5 text-md sm:text-md text-n0gray-400">introducing</p>
+      <img src="/img/logos/iroh-wordmark-full-purple.svg" class="w-40" />
+      <div class="w-28">
+      </div>
+      <p class="mt-10 text-lg">A toolkit for building distributed applications.</p>
+      <a href="https://github.com/n0-computer/iroh" class="inline-block my-10 py-3 px-5 bg-irohPurple-500 text-white">
+        FOLLOW DEV ON GITHUB
+      </a>
+    </div>
+  </div>
+</section>
+<section style=" class="w-full text-n0gray-900 py-40 sm:py-80 px-10 bg-white bg-cover bg-center shadow-inner flex flex-col sm:flex-row">
+  <div class="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
+    <div class="w-auto sm:w-5/12 lg:w-4/12 leading-normal">
+      <p class="mb-5 text-md sm:text-md text-n0gray-400">introducing</p>
+      n0des
+      <div class="w-28">
+      </div>
+      <p class="mt-10 text-lg">A platform for deploying and measuring peer-to-peer networks.</p>
+      <a href="https://n0des.iroh.computer/" class="inline-block my-10 py-3 px-5 bg-irohPurple-500 text-white">
+        Sign up
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %} {% block pagination %} {% if page.earlier or page.later or
+page.lighter or page.heavier %}
+<!--TODO-->
+{% endif %} {% endblock %}
