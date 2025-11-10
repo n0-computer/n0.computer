@@ -10,7 +10,7 @@ template = "people/index.html"
 # will always use the closest to itself.
 # However, a page's own `template` variable will always have priority.
 # Not set by default.
-page_template = "people/page.html"
+# page_template = 
 
 # The date of the post.
 # Two formats are allowed: YYYY-MM-DD (2012-10-02) and RFC3339 (2002-10-02T15:00:00Z).
