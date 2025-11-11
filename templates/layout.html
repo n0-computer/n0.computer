@@ -73,11 +73,27 @@
           <div class="hidden inset-y-0 sm:block sm:pr-0 sm:inset-auto">
             <div class="flex space-x-5">
               <!-- Current: "bg-n0gray-900 text-white", Default: "text-n0gray-400 hover:bg-n0gray-700 hover:text-white" -->
-              <a href="/n0ps" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white">protocol services</a>
-              <a href="/roles" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white">roles</a>
-              <a href="https://github.com/n0-computer" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white">github</a>
-              <a href="https://www.youtube.com/channel/UCdWMU1dBMmB4SrMokGI4jvA" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white">youtube</a>
-              <a href="https://twitter.com/n0computer" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white">twitter</a>
+              <a href="/" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white">about</a>
+              <!-- Products dropdown -->
+              <div class="relative group inline-block">
+                <button id="toggle-products-dropdown" type="button" onclick="(function(e){e.stopPropagation();var m=document.getElementById('products-dropdown'); if(m){m.classList.toggle('hidden'); console.debug('inline products toggle');}})(event)" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white inline-flex items-center" aria-expanded="false" aria-haspopup="true" aria-controls="products-dropdown">
+                  products
+                  <svg class="ml-2 h-4 w-4 text-n0gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div id="products-dropdown" class="hidden absolute z-20 mt-2 w-48 bg-n0gray-800 rounded-md shadow-lg ring-1 ring-black ring-opacity-5" role="menu" aria-hidden="true">
+                  <div class="py-1">
+                    <a href="https://iroh.computer" target="_blank" class="block px-4 py-2 text-sm text-n0gray-200 hover:bg-n0gray-700">iroh</a>
+                    <!--<a href="https://n0des.iroh.computer" target="_blank" class="block px-4 py-2 text-sm text-n0gray-200 hover:bg-n0gray-700">n0des</a>-->
+                    <a href="https://iroh.computer/sendme" target="_blank" class="block px-4 py-2 text-sm text-n0gray-200 hover:bg-n0gray-700">sendme</a>
+                    <a href="https://dumbpipe.dev" target="_blank" class="block px-4 py-2 text-sm text-n0gray-200 hover:bg-n0gray-700">dumbpipe</a>
+                </div>
+              </div>
+              <a href="/n0ps" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white">services</a>
+              <a href="/people" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white">team</a>
+              <a href="https://github.com/n0-computer" target="_blank" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white">github</a>
+              <a href="https://www.youtube.com/channel/UCdWMU1dBMmB4SrMokGI4jvA" target="_blank" class="text-n0gray-400 px-3 py-2 rounded-md text-sm font-medium transition ease-in-out delay-50 transition-colors hover:text-white">youtube</a>
             </div>
           </div>
         </div>
@@ -86,11 +102,19 @@
 
     <!-- Mobile menu, show/hide based on menu state. -->
     <div id="mobile-menu" class="hidden bg-n0gray-900 sm:hidden transition-colors ease-in duration-1000" aria-hidden="true" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-      <div class="px-2 pt-2 pb-3 space-y-1">
-        <a href="/n0ps" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">protocol services</a>
-        <a href="/roles" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">roles</a>
+        <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="/" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">about</a>
+        <details class="group">
+          <summary class="text-n0gray-400 px-3 py-2 rounded-md text-base font-medium list-none">products</summary>
+          <div class="pl-4">
+            <a href="https://iroh.computer" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">iroh</a>
+            <a href="https://iroh.computer/sendme" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">sendme</a>
+            <a href="https://dumbpipe.dev" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">dumbpipe</a>
+          </div>
+        </details>
+        <a href="/n0ps" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">services</a>
+        <a href="/people" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">team</a>
         <a href="https://github.com/n0-computer" class="hover:text-white block px-3 py-2 rounded-md text-base font-medium">github</a>
-        <a href="https://twitter.com/n0computer" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">twitter</a>
         <a href="https://www.youtube.com/channel/UCdWMU1dBMmB4SrMokGI4jvA" class="text-n0gray-400 hover:bg-n0gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">youtube</a>
       </div>
     </div>
@@ -118,6 +142,8 @@
         <a href="https://iroh.computer" target="blank" class="mr-4">iroh</a>
         <a href="https://iroh.computer/sendme" target="blank" class="mr-4">sendme</a>
         <a href="https://dumbpipe.dev" target="blank" class="mr-4">dumbpipe</a>
+        <a href="https://github.com/n0-computer" target="blank" class="mr-4">github</a>
+        <a href="https://www.youtube.com/channel/UCdWMU1dBMmB4SrMokGI4jvA" target="blank" class="mr-4">youtube</a>
         <a href="/contact" target="blank" class="mr-4">contact</a>
         <a href="/legal" target="blank" class="mr-4">legal</a>
       </div>
@@ -125,6 +151,7 @@
     <div class="w-full mt-5 py-6 px-4 sm:scroll-px-6 md:px-10">
         <p class="text-xs text-n0gray-700">Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License.<br />For details, see our Site Policies.</p>
     </div>
+    
   </footer>
   {% endblock footer %}
 

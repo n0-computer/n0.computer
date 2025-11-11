@@ -1,16 +1,16 @@
 +++
-title = "Work with number 0"
-description = "Open positions"
+title = "People"
+description = "One of the very few teams with a proven track record of shipping direct connection topologies in production apps"
 
 # Template to use to render this section page.
-template = "roles/index.html"
+template = "people/index.html"
 
 # The given template is applied to ALL pages below the section, recursively.
 # If you have several nested sections, each with a page_template set, the page
 # will always use the closest to itself.
 # However, a page's own `template` variable will always have priority.
 # Not set by default.
-page_template = "roles/page.html"
+# page_template = 
 
 # The date of the post.
 # Two formats are allowed: YYYY-MM-DD (2012-10-02) and RFC3339 (2002-10-02T15:00:00Z).
@@ -52,12 +52,3 @@ aliases = []
 in_search_index = true
 
 +++
-
-## Open Roles at number 0
-
-### We have no open roles at this time.
-
-Rather than leave "ghost roles" open that we don't intend to fill, we're opting to keep this page empty. If you're a truly standout human & think you'd be an incredible fit for out team, please reach out via email to "hello" at this website, or thorugh the iroh discord. Nearly all of our team has come to us thorugh "the passion door", instead of having an explicit role they applied for.
-
-Thanks,
-The number 0 team

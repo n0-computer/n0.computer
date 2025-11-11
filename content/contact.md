@@ -53,4 +53,4 @@ template = "page.html"
 [extra]
 +++
 
-Get in touch by emailing hello [at] (n0.computer)
+Get in touch by emailing hello [at] (n0.computer) or by [booking a meeting](https://cal.com/team/number-0/n0-protocol-services)
