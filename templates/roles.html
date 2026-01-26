@@ -1,0 +1,83 @@
+{% extends "layout.html" %} {% block content %}
+<div class="py-40 w-full">
+    <div class="w-full max-w-3xl mr-auto px-4 sm:px-6 lg:px-10">
+        <h1 class="text-4xl text-bold leading-relaxed mb-5">open roles</h1>
+        <div class="border-t border-gray-700 py-6">
+            <h1 class="text-3xl leading-normal font-bold mx-auto">
+                Contract Business Development Lead — n0
+            </h1>
+            <h3 class="text-lg leading-normal text-n0gray-400">
+                Part-time contract position
+            </h3>
+
+            <div class="py-6 text-lg leading-8">
+                <p class="mb-4">
+                    We're looking for an experienced business development
+                    professional to help us price &amp; ship two product lines
+                    built on Iroh. This is a hands-on, strategic role working
+                    directly with the CEO and Head of Product to validate
+                    pricing, refine ideal customer profiles, and drive sales
+                    conversations.
+                </p>
+
+                <h3 class="text-2xl leading-normal text-n0gray-400 mt-6 mb-2">
+                    Scope of Work
+                </h3>
+                <ul class="list-disc pl-5 mb-8">
+                    <li class="mb-1">
+                        Schedule and coordinate willingness-to-pay interviews
+                        with target customers
+                    </li>
+                    <li class="mb-1">
+                        Synthesize feedback from customer conversations into
+                        actionable pricing insights
+                    </li>
+                    <li class="mb-1">
+                        Work with CEO and Head of Product to develop and iterate
+                        on pricing models
+                    </li>
+                    <li class="mb-1">
+                        Expand our existing market research to define ideal
+                        customer profiles for each of our product lines
+                    </li>
+                    <li class="mb-1">
+                        Audit and organize existing prospect data against
+                        refined ICPs
+                    </li>
+                    <li class="mb-1">
+                        Prioritize outreach targets based on fit
+                    </li>
+                </ul>
+
+                <p class="mb-4">
+                    If you have deep experience defining & refining the price of
+                    a product, come hang out. The n0 team has the engineering
+                    skills to ship truly new technology, growing revenue, and a
+                    hunger to find more open doors to push on.
+                </p>
+
+                <p class="mb-4">
+                    If that sounds interesting,
+                    <a
+                        class="text-lg text-n0pink-500 cursor-pointer underline decoration-dotted"
+                        href="https://cal.com/team/number-0/open-role-call"
+                        >schedule a call</a
+                    >
+                    with a link to something we can read to learn more about
+                    you.
+                </p>
+                <div class="mt-10">
+                    <a
+                        class="text-lg text-n0pink-500 cursor-pointer underline decoration-dotted"
+                        href="https://cal.com/team/number-0/open-role-call"
+                        >Let&apos;s chat</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} {% block pagination %} {% if page.earlier or page.later or
+page.lighter or page.heavier %}
+<!--TODO-->
+{% endif %} {% endblock %}
