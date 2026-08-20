@@ -2,6 +2,9 @@
 title = "Biz Dev Lead"
 description = "Full Time, Remote" 
 template = "roles/page.html"
+extra = {
+    department = "Sales"
+}
 +++
 
 ### Full-time

@@ -2,6 +2,9 @@
 title = "Marketing Lead"
 description = "Full Time, Remote"
 template = "roles/page.html"
+extra = {
+    department = "Marketing"
+}
 +++
 
 ### Full-time · Early-to-mid-career

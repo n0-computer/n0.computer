@@ -2,6 +2,9 @@
 title = "Dev Ops"
 description = "Full Time, Remote"
 template = "roles/page.html"
+extra = {
+    department = "Ops & Measurement"
+}
 +++
 
 This is the classic job, done well: keep the servers running. As Iroh Services grows into enterprise deployments, the reliability of our infrastructure becomes a promise we make to customers — and we're looking for the person who helps us keep that promise. You'll work directly with our head of measurement & operations, and receive support from the engineering team to drive a smooth experience marked by a quality of care & craft that we aim to bring to all of our work.

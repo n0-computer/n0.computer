@@ -7,32 +7,21 @@
                 <h1 class="text-5xl leading-normal font-bold mx-auto">
                     {{ page.title }}
                 </h1>
-                <h3 class="text-lg leading-normal text-n0gray-400">
-                    {{ page.description }}
+                <h3 class="text-md leading-loose text-n0gray-400">
+                    {{ page.extra.department }} <span class="text-n0gray-700 px-2">|</span> {{ page.description }}
                 </h3>
 
                 <div id="page-content" class="py-6 text-lg leading-8">
                     {{ page.content | safe }}
-                    <p class="my-10">
-                        If that sounds interesting,
-                        <a
-                            class="text-lg text-n0pink-500 cursor-pointer underline decoration-dotted"
-                            href="https://cal.com/team/number-0/open-role-call"
-                            >schedule a call</a
-                        >
-                        with a link to something we can read to learn more about
-                        you.
+                    <p class="my-10 text-2xl">
+                        If that sounds interesting, send us an email. The address is <span class="font-mono">jobs@</span> this domain. If you want to learn more, jump in the iroh discord & ask us.
                     </p>
-                    <div class="mt-10">
-                        <a
-                            class="text-lg text-n0pink-500 cursor-pointer underline decoration-dotted"
-                            href="https://cal.com/team/number-0/open-role-call"
-                            >Let&apos;s chat</a
-                        >
+                    <div class="text-n0gray-400 text-sm leading-6">
+                        If you do decide to apply for this role, we're delighted! However, please take the time to craft a message you would be proud of. We will review your email with real human eyeballs, but won't bother to reply if your message feels templated or under-considered.
                     </div>
                 </div>
+                <a class="text-n0pink-500" href="/roles">^ back to all roles</a>
             </div>
         </div>
     </div>
 {% endblock %}
-{% block pagination %}{% endblock %}
