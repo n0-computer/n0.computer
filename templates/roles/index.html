@@ -1,0 +1,17 @@
+{% extends "layout.html" %} {% block content %}
+    <div class="py-40 w-full">
+        <div class="w-full max-w-3xl mr-auto px-4 sm:px-6 lg:px-10">
+            <h1 class="text-4xl text-bold leading-relaxed mb-5">open roles</h1>
+
+            {% for role in section.pages %}
+                <a class="cursor-pointer hover:text-n0pink-500 transition-all" href="{{ role.permalink }}">
+                    <div class="border-t border-gray-700 py-6 sm:grid sm:grid-cols-2 gap-5">
+                        <h3 class="text-2xl font-bold leading-8 mb-2">{{ role.title }}</h3>
+                        <p class="text-md leading-7">{{ role.description | safe }}</p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+{% block pagination %}{% endblock %}
