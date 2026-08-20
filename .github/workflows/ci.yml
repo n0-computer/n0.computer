@@ -27,8 +27,8 @@ jobs:
 
     - name: build
       run: |
-        yarn install
-        yarn build
+        npm i
+        npm run build
 
     - name: push to s3, clear cloudfront
       if: github.ref_name=='main'
