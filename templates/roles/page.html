@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="py-40 w-full">
+        <div class="w-full max-w-3xl mr-auto px-4 sm:px-6 lg:px-10">
+            <div class="border-t border-gray-700 py-6">
+                <h1 class="text-md text-bold leading-relaxed  text-n0gray-400">open role</h1>
+                <h1 class="text-5xl leading-normal font-bold mx-auto">
+                    {{ page.title }}
+                </h1>
+                <h3 class="text-lg leading-normal text-n0gray-400">
+                    {{ page.description }}
+                </h3>
+
+                <div id="page-content" class="py-6 text-lg leading-8">
+                    {{ page.content | safe }}
+                    <p class="my-10">
+                        If that sounds interesting,
+                        <a
+                            class="text-lg text-n0pink-500 cursor-pointer underline decoration-dotted"
+                            href="https://cal.com/team/number-0/open-role-call"
+                            >schedule a call</a
+                        >
+                        with a link to something we can read to learn more about
+                        you.
+                    </p>
+                    <div class="mt-10">
+                        <a
+                            class="text-lg text-n0pink-500 cursor-pointer underline decoration-dotted"
+                            href="https://cal.com/team/number-0/open-role-call"
+                            >Let&apos;s chat</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block pagination %}{% endblock %}
