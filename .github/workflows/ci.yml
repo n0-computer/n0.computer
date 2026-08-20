@@ -18,25 +18,25 @@ jobs:
 
     - name: setup
       run: |
-        wget https://github.com/barnumbirr/zola-debian/releases/download/v0.16.0-1/zola_0.16.0-1_amd64_bullseye.deb
-        sudo dpkg -i zola_0.16.0-1_amd64_bullseye.deb
-    
+        wget https://github.com/pkghaus/zola-debian/releases/download/v0.23.3-1/zola_0.23.3-1_amd64_trixie.deb
+        sudo dpkg -i zola_0.23.3-1_amd64_trixie.deb
+
     - uses: actions/setup-node@v3
       with:
-        node-version: 18.7
+        node-version: 20.20.2
 
     - name: build
       run: |
         yarn install
         yarn build
-    
+
     - name: push to s3, clear cloudfront
       if: github.ref_name=='main'
       run: |
         export AWS_ACCESS_KEY_ID=${{secrets.S3_ACCESS_KEY_ID}}
         export AWS_SECRET_ACCESS_KEY=${{secrets.S3_ACCESS_KEY}}
         export AWS_DEFAULT_REGION=us-west-2
-        
+
         curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
         unzip -q awscliv2.zip
         sudo ./aws/install --update
