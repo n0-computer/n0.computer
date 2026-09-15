@@ -1,5 +1,5 @@
 +++
-title = "Lead Engineer: Iroh Services"
+title = "Senior Full Stack Engineer"
 description = "Full Time, Remote" 
 template = "roles/page.html"
 extra = {
@@ -7,7 +7,7 @@ extra = {
 }
 +++
 
-### Full-time · Senior Engineer
+### Full-time · Senior Full Stack Engineer
 
 We're looking for a senior full-stack engineer to own services.iroh.computer — the hosted infrastructure that turns Iroh from a library into a product. This is a high-trust role for someone who loves growing production systems and then factoring them to be equally reliable & lovable. You'll work directly with our Head of Product and CTO to grow the platform, with support from our core engineering team.
 
