@@ -2,6 +2,7 @@
 title = "Forward Deployed Engineer"
 description = "Full Time, Remote"
 template = "roles/page.html"
+aliases = ["/roles/solutions-engineer/"]
 extra = {
     department = "Customers"
 }
